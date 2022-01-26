@@ -1,0 +1,137 @@
+.login--page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+
+    .login--box{
+        padding: 32px;
+        background-color: #ffffff;
+        width: 600px;
+        border-radius: 3px;
+        box-shadow: 0 1px 6px rgba(57,73,76,.35);
+    
+        .title{
+            text-align: center;
+            margin: 0;
+        }
+
+        .form--group{
+            padding: 16px 0;
+            position: relative;
+
+            label{
+                display: block;
+                font-weight: 600;
+            }
+
+            input{
+                width: 100%;
+                padding: 5px 15px;
+                border: 1px solid rgba(42, 40, 40, 0.75);
+            }
+
+            svg{
+              position: absolute;
+              top: 57px;
+              right: 15px;
+            }
+
+            .btn--login{
+                background-color: #37a000;
+                color: #ffffff;
+                border-radius: 3px;
+                border: 2px solid #37a000;
+                width: 100%;
+                padding: 5px;
+
+                &:hover{
+                    color: #ffffff;
+                    background-color: #2d7208;
+                    border: 2px solid #2d7208;
+                }
+            }
+
+            .error-message{
+                font-weight: 600;
+                color: #ff0000;
+                font-size: 12px;
+            }
+        }
+
+        .error--message{
+            padding: 5px 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            background-color: #ff0000;
+            color: #ffffff;
+        }
+        
+        .success--message{
+            padding: 5px 15px;
+            margin-top: 15px;
+            font-weight: 600;
+            background-color: #37a000;
+            color: #ffffff;
+        }
+    }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #000000;
+  font-size: 6px;
+  margin: 15px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}

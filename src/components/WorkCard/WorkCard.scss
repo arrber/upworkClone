@@ -1,0 +1,19 @@
+.work-card{
+    text-align: center;
+
+    img{
+        width: 110px;
+        height: 110px;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .title{
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .description{
+        font-size: 14px;
+    }
+}

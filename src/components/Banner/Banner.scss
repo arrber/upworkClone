@@ -1,0 +1,46 @@
+.banner{
+    background: url('/assets/images/banner-background.webp');
+    background-size: 100% auto;
+
+    .banner-text{
+        padding: 45px 16px;
+
+        .main-title{
+            font-size: 46px;
+            font-weight: 700;
+            color: #37a000;
+            margin-bottom: 0px;
+        }
+        
+        .secondary-title{
+            font-size: 46px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .description{
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+
+        .btn--c{
+            padding: 5px 35px;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        .get-started{
+            margin-right: 15px;
+            background-color: #37a000;
+            border: 2px solid #37a000;
+            color: #ffffff;
+        }
+       
+        .demo{
+            margin-right: 15px;
+            background-color: #ffffff;
+            border: 2px solid #ffffff;
+            color: #37a000;
+        }
+    }
+}

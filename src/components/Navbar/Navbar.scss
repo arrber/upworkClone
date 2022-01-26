@@ -1,0 +1,120 @@
+.app-navbar{
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    z-index: 21;
+    background-color: #ffffff;
+
+    .app-logo{
+        height: 50px;
+    }
+
+    .hamburger-menu{
+        margin-left: auto;
+        display: none;
+        cursor: pointer;
+        
+        @media (max-width: 960px){
+            display: block;
+        }
+    }
+
+    .app-menu-desktop{
+        margin-left: auto;
+        display: flex;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 0;
+
+        @media (max-width: 960px){
+            display: none;
+        }
+
+        li{
+
+            .nav--link{
+                display: block;
+                color: #222222;
+                padding: 5px 15px;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                transition: all .15s linear;
+
+                &:hover{
+                    color: #37a000;
+                }
+            }
+
+            .signup{
+                background-color: #37a000;
+                color: #ffffff;
+                border-radius: 3px;
+                border: 2px solid #37a000;
+
+                &:hover{
+                    color: #ffffff;
+                    background-color: #2d7208;
+                    border: 2px solid #2d7208;
+                }
+            }
+        }
+    }
+
+}
+
+
+.app-menu-mobile{
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 20;
+    left: 0;
+    top: -100%;
+    padding: 16px;
+    transition: all .35s linear;
+
+    @media (min-width: 960px){
+        display: none;
+    }
+
+    li{
+
+        .nav--link{
+            display: block;
+            color: #222222;
+            padding: 5px 15px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .15s linear;
+
+            &:hover{
+                color: #37a000;
+            }
+        }
+
+        .signup{
+            background-color: #37a000;
+            color: #ffffff;
+            border-radius: 3px;
+            border: 2px solid #37a000;
+
+            &:hover{
+                color: #ffffff;
+                background-color: #2d7208;
+                border: 2px solid #2d7208;
+            }
+        }
+    }
+}
+
+.app-menu-mobile-active{
+    top: 65px;
+}

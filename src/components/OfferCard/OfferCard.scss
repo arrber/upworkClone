@@ -1,0 +1,53 @@
+.offer-card{
+    box-shadow: 0 1px 6px rgba(57,73,76,.35);
+    padding: 16px;
+    height: 100%;
+
+    .title{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .offer-btn{
+        display: block;
+        color: #ffffff;
+        padding: 5px 15px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all .15s linear;
+        background-color: #37a000;
+        border-radius: 3px;
+        border: 2px solid #37a000;
+        margin: 0 auto 15px;
+
+        &:hover{
+            color: #ffffff;
+            background-color: #2d7208;
+            border: 2px solid #2d7208;
+        }
+    }
+
+    .fee{
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .offer-services{
+        list-style: none;
+        padding: 16px 0;
+        border-top: 1px solid #777474;
+
+        li{
+            font-size: 12px;
+            padding: 4px 0;
+            display: flex;
+
+            svg{
+                margin-right: 5px;
+                color: #37a000;
+            }
+        }
+    }
+}
